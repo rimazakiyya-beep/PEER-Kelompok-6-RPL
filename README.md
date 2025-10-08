@@ -1,3 +1,5 @@
-# Nailong
+# Kelompok 6
 
-## nailong
+## Ketua Zalika
+
+### Anggota Tessa & Rima
