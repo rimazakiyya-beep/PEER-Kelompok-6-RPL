@@ -17,6 +17,21 @@ int main() {
     int umur;
     double penghasilan, totalPenghasilan = 0;
 
+    for (int i = 1; i <= jumlahAnggota; i++) {
+        cout << "\nMasukkan umur anggota ke-" << i << ": ";
+        cin >> umur;
+
+        if (umur >= 18 && umur <= 60) {
+            cout << "Masukkan penghasilan per bulan: Rp ";
+            cin >> penghasilan;
+            totalPenghasilan += penghasilan;
+        } else {
+            cout << "Anggota ini tidak produktif.\n";
+        }
+    }
+    
+    double BulananPerAnggota = totalPenghasilan / jumlahAnggota;
+    cekKelayakan(BulananPerAnggota);
 
     return 0;
 }
