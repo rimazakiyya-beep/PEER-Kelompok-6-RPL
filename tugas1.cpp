@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void cekKelayakan(double BulananPerAnggota) {
+void cekKelayakan(long long BulananPerAnggota) {
     cout << "\nRata-rata penghasilan per anggota: Rp " << BulananPerAnggota << endl;
     if (BulananPerAnggota < 750000)
         cout << "Diperbolehkan untuk mendaftar KIP.\n";
@@ -15,7 +15,7 @@ int main() {
     cin >> jumlahAnggota;
 
     int umur;
-    double penghasilan, totalPenghasilan = 0;
+    long long penghasilan, totalPenghasilan = 0;
 
     for (int i = 1; i <= jumlahAnggota; i++) {
         cout << "\nMasukkan umur anggota ke-" << i << ": ";
@@ -30,7 +30,7 @@ int main() {
         }
     }
     
-    double BulananPerAnggota = totalPenghasilan / jumlahAnggota;
+    long long BulananPerAnggota = totalPenghasilan / jumlahAnggota;
     cekKelayakan(BulananPerAnggota);
 
     return 0;
